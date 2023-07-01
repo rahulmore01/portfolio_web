@@ -1,0 +1,44 @@
+@use "../../../scss/index.scss" as *;
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+.hero_container {
+  background-color: $BG_color;
+}
+.hero {
+  @include flex();
+  flex-direction: column;
+  gap: 40px;
+  background-color: $BG_color;
+  height: 100vh;
+  width: 100%;
+  color: white;
+}
+
+.hero_text {
+  @include flex();
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.hero_cta {
+  @include flex();
+  gap: 24px;
+  font-size: 14px;
+}
+.hero_cta_main {
+  background-color: $cta_BG_color;
+  border-radius: 8px;
+  border: 1px solid white;
+  padding: 10px 24px;
+}
+.hero_cta_next {
+  // background-color: $cta_BG_color;
+  border-radius: 8px;
+  border: 1px solid white;
+  padding: 10px 24px;
+}

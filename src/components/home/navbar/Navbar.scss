@@ -1,0 +1,27 @@
+@use "../../../scss/index.scss" as *;
+
+.nav {
+  color: white;
+  height: 80px;
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  @include flex();
+  justify-content: space-around;
+  flex-direction: row;
+}
+.nav_links {
+  font-size: 12px;
+  @include flex();
+  gap: 48px;
+}
+.logo {
+  //   background: url(../../../../public/assets/Logo.png);
+}
+.nav_cta_main {
+  font-size: 12px;
+  background-color: $cta_BG_color;
+  border-radius: 8px;
+  border: 0.7px solid white;
+  padding: 6px 20px;
+}
