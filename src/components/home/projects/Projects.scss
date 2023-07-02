@@ -1,0 +1,72 @@
+@use "../../../scss/index.scss" as *;
+
+.projects_main {
+  height: auto;
+  width: 100%;
+  color: white;
+  background-color: $other_BG_color;
+  @include flex();
+  flex-direction: column;
+  //   justify-content: space-around;
+}
+.projects_card {
+  @include flex();
+  gap: 12px;
+  background-color: $card_BG_color;
+  padding: 50px;
+  border-radius: 28px;
+}
+.projects_cards_wrapper {
+  @include flex();
+  flex-direction: column;
+  gap: 70px;
+}
+
+.projects_card_text {
+  width: 450px;
+}
+.projects_title {
+  font-size: 38px;
+  margin-top: 100px;
+  margin-bottom: 48px;
+}
+.projects_card_title {
+  font-size: 30px !important;
+}
+.projects_card_subtitle {
+  font-size: 18px !important;
+  margin-top: 12px;
+  margin-bottom: 9px;
+}
+.projects_card_para {
+  font-size: 16px;
+  line-height: 18px;
+  margin-bottom: 10px;
+}
+.projects_card_btn {
+  color: rgb(217, 214, 214);
+  width: 42px;
+  height: 42px;
+  //   background-color: $other_BG_color;
+  background-color: transparent;
+}
+
+.projects_card_img {
+  border-radius: 20px;
+  height: 230px;
+  width: 400px;
+}
+.btn_wrapper {
+  @include flex();
+  justify-content: flex-start;
+  gap: 24px;
+}
+.project_cards_view_btn {
+  color: white;
+  font-size: 18px;
+  background-color: $cta_BG_color;
+  border-radius: 8px;
+  border: 1px solid white;
+  padding: 12px 28px;
+  margin-top: 80px;
+}
